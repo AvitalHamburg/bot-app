@@ -6,12 +6,12 @@ import { ThemeProvider } from 'styled-components';
 const steps = [
     {
         id: '0',
-        message: 'שלום גיק! (Hey Geek!)',
+        message: 'שלום לך!',
         trigger: '1',
     },
     {
         id: '1',
-        message: 'אנא הכנס את שם המשתמש שלך (Please write your username)',
+        message: 'יש לכתוב את שמך',
         trigger: '2'
     },
     {
@@ -21,14 +21,14 @@ const steps = [
     },
     {
         id: '3',
-        message: " היי {previousValue}, איך אני יכול לעזור לך? (Hi {previousValue}, how can I help you?)",
+        message: " היי {previousValue}, איך אני יכול לעזור לך?",
         trigger: '4'
     },
     {
         id: '4',
         options: [
-            { value: 1, label: 'הצג קורסים (View Courses)' },
-            { value: 2, label: 'קרא מאמרים (Read Articles)' },
+            { value: 1, label: 'הצג קורסים' },
+            { value: 2, label: 'תראה מידע' },
         ],
         end: true
     }
@@ -46,8 +46,8 @@ const theme = {
 };
 
 const config = {
-    botAvatar: "img.png",
-    floating: true,
+  botAvatar: "logo.png",  
+  floating: true,
 };
 
 function App() {
